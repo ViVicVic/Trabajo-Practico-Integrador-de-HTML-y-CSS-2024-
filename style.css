@@ -1,0 +1,780 @@
+/*VARIABLES*/
+:root {
+    --pink: #880e9b;
+    --purple: #570e9b;
+    --darkblue: #171764;
+    --blue: #280e9b;
+    --lightblue: #0479bd;
+    --sky: #a6d3ff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: radial-gradient(rgba(180, 219, 255, 0.558) 5.5px, transparent 5.5px), radial-gradient(rgba(186, 180, 255, 0.254) 5.5px, transparent 5.5px);
+    background-size: 77px 77px;
+    background-position: 0 0, 38.5px 38.5px;
+    background-color: #eceeff;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100dvh;
+}
+.center {
+    width: 80rem;
+    margin: 0 auto;
+}
+#currentPage {
+    color: var(--darkblue);
+}
+/*HEADER AQUARIUM*/
+header {
+    background: linear-gradient(90deg, var(--darkblue) 0%, var(--blue) 35%, #48a5db 100%);
+}
+header .center {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .center img {
+    width: 20rem;
+}
+header .center nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header .center nav ul li a{
+    color: white;
+    font-size: 30px;
+    margin-left: 40px;
+    transition: color ease 0.4s;
+}
+header .center nav ul li a:hover {
+    color: var(--darkblue);
+    transition: color ease 0.4s;
+}
+/*ABOUT AQUARIUM*/
+main #aboutAquarium .center {
+    margin-top: 7rem;
+}
+main #aboutAquarium .center #aquariumSection {
+    display: flex;
+    justify-content: space-between;
+}
+main #aboutAquarium .center #aquariumSectionAddOns {
+    display: flex;
+    justify-content: space-around;
+}
+main #aboutAquarium .center #aquariumSectionAddOns #addOnsStar img{
+    position: relative;
+    bottom: 205px;
+    left: 105px;
+    filter: drop-shadow(rgba(9, 9, 72, 0.572) 0 0 3px);
+}
+main #aboutAquarium .center #aquariumSectionAddOns #addOnsCorals img{
+    height: 140px;
+    position: relative;
+    bottom: 200px;
+    left: 140px;
+    filter: drop-shadow(rgba(9, 9, 72, 0.572) 0 0 3px);
+}
+main #aboutAquarium .center #aquariumSectionAddOns #addOnsBubbles img{
+    position: relative;
+    height: 130px;
+    bottom: 195px;
+    left: 170px;
+    filter: drop-shadow(rgba(77, 144, 212, 0.572) 0 0 3px);
+}
+main #aboutAquarium .center #aquariumSection .aquaOptions {
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main #aboutAquarium .center #aquariumSection .aquaOptions p {
+    text-align: center;
+    width: 19.9rem;
+}
+#aboutAquarium .center #aquariumSection .aquaOptions a {
+    text-decoration: none;
+    font-family: "Lilita One", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 20rem;
+    border-radius: 10px;
+    outline: 3px dashed var(--lightblue);
+    outline-offset: -7px;
+    background-color: var(--sky);
+    color: var(--lightblue);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out, outline .3s ease-in-out;
+}
+#aboutAquarium .center #aquariumSection .aquaOptions a:hover {
+    color: white;
+    box-shadow: inset 20rem 0 0 0 var(--blue);
+    outline: 3px dashed white;
+    outline-offset: -7px;
+}
+/*AQUARIUM STARS*/
+#aquariumStars .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#aquariumStars .center i {
+    font-size: 30px;
+    color: #3d7cd5;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #3d7cd5;
+}
+#aquariumStars .center .aquaAnimal:hover {
+    top: -10px;
+}
+#aquariumStars .center .aquaAnimal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    width: 30rem;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+#aquariumStars .center .aquaAnimal .animalTitle {
+    color: #329dd1;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#aquariumStars .center .aquaAnimal p {
+    width: 80%;
+    margin: 0 auto;
+}
+#aquariumStars .center .aquaAnimal img{
+    width: 100%;
+    filter: drop-shadow(rgba(77, 144, 212, 0.572) 0 0 3px);
+}
+/*AQUARIUM NEWS*/
+#aquariumNews .center{
+    margin-top: 5rem;
+}
+#aquariumNews .center h2{
+    margin-bottom: 10px;
+}
+#aquariumNews .center #newsCategories {
+    display: flex;
+}
+#aquariumNews .center #newsCategories div {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    transition: ease 0.3s;
+}
+#aquariumNews .center #newsCategories div a {
+    color: white;
+    text-decoration: none;
+}
+#aquariumNews .center #newsCategories #linkOne {
+    background-color: var(--pink);
+}
+#aquariumNews .center #newsCategories #linkTwo {
+    background-color: var(--purple);
+}
+#aquariumNews .center #newsCategories #linkThree {
+    background-color: var(--blue);
+}
+#aquariumNews .center #newsCategories #linkFour {
+    background-color: var(--lightblue);
+}
+#aquariumNews .center #newsCategories #linkOne:hover {
+    transform: scale(1.1);
+    margin-right: 25px;
+    transition: ease 0.3s;
+}
+#aquariumNews .center #newsCategories #linkTwo:hover {
+    transform: scale(1.1);
+    margin-right: 25px;
+    transition: ease 0.3s;
+}
+#aquariumNews .center #newsCategories #linkThree:hover {
+    transform: scale(1.1);
+    margin-right: 25px;
+    transition: ease 0.3s;
+}
+#aquariumNews .center #newsCategories #linkFour:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+}
+#aquariumNews .center #newsArticles article {
+    display: flex;
+    margin-top: 10px;
+}
+#aquariumNews .center #newsArticles article .newsDate {
+    width: 100px;
+    font-weight: 700;
+}
+#aquariumNews .center #newsArticles article .newsContent {
+    text-decoration: underline;
+    color: var(--lightblue);
+}
+#aquariumNews .center #newsArticles article .divEvent {
+    width: 5px;
+    background-color: var(--purple);
+    margin-right: 15px;
+    border-radius: 3px;
+}
+#aquariumNews .center #newsArticles article .divImportant {
+    width: 5px;
+    background-color: var(--lightblue);
+    margin-right: 15px;
+    border-radius: 3px;
+}
+/*AQUARIUM FOOTER*/
+footer {
+    margin-top: 5rem;
+    background: linear-gradient(90deg, var(--darkblue) 0%, var(--blue) 35%, #48a5db 100%);
+}
+footer .center {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .center #sectionFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .center #sectionFooter #aquariumSocials {
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+footer .center #sectionFooter #aquariumSocials .socialCategory {
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: center;
+    padding:0 1em ;
+    transition: transform ease 0.3s;
+    color: white;
+}
+footer .center #sectionFooter #aquariumSocials .socialCategory:hover {
+    transform: scale(1.05);
+    transition: transform ease 0.3s;
+}
+
+footer .center #sectionFooter #aquariumSocials .socialCategory span {
+    margin-top: 5px;
+    color: white;
+    text-shadow: 0 0 5px rgba(23, 23, 100, 0.655);
+    font-weight: 600;
+}
+footer .center #sectionFooter #aquariumSocials .socialCategory .socialMedia {
+    background-color: var(--darkblue);
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+footer #copy {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
+}
+/*AQUARIUM ASIDE*/
+aside {
+    margin-top: 5rem;
+}
+aside .center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+aside .center h2 {
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    color: var(--darkblue);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid var(--darkblue);
+}
+aside .center .videoAd {
+    width: 26rem;
+}
+aside .center .videoAd iframe{
+    width: 100%;
+    height: 15rem;
+    border-radius: 5px;
+}
+/*SIGN UP HTML*/
+main#forms .center {
+    width: 40rem;
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+main#forms .center #titleForm {
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--darkblue);
+}
+main#forms .center #titleForm h2 {
+    margin-bottom: 10px;
+    color: var(--darkblue);
+}
+main#forms .center form #allInputs {
+    display: flex;
+    justify-content: space-between;
+}
+main#forms .center form .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    accent-color: var(--darkblue);
+}
+main#forms .center form .inputs#inputsLeft input {
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+    color: var(--darkblue);
+}
+main#forms .center form .inputs#inputsLeft input::placeholder {
+    color: var(--lightblue);
+}
+main#forms .center form .inputs #genders input[type=radio] {
+    appearance: none;
+}
+main#forms .center form .inputs #genders {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+main#forms .center form .inputs #genders label {
+    cursor: pointer;
+    display: inline-block;
+    width: 30%;
+    padding: 5.5px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+    color: var(--lightblue);
+    background-color: white;
+}
+main#forms .center form .inputs #genders label:has(input:checked) {
+    background-color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    color: white;
+    outline: 1px dashed white;
+    outline-offset: -5px;
+}
+main#forms .center form .inputs select {
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+    color: var(--lightblue);
+}
+main#forms .center form .formSend input {
+    background-color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    color: white;
+    outline: 1px dashed white;
+    outline-offset: -5px;
+    margin-right: 14px;
+    border-radius: 5px;
+    width: 145px;
+    padding: 5px 0;
+    transition: ease 0.3s;
+}
+main#forms .center form .formSend input:hover {
+    cursor: pointer;
+    border: 2px solid var(--darkblue);
+    color: var(--darkblue);
+    background-color: white;
+    outline: 1px dashed var(--darkblue);
+    outline-offset: -5px;
+    transition: ease 0.3s;
+}
+/*SURVEYS HTML*/
+#surveys .center {
+   margin-top: 5rem;
+}
+#surveys .center form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#surveys .center form .formSide {
+    display: flex;
+    flex-direction: column;
+    width: 39rem;
+}
+#surveys .center form .formSide h2 {
+    color: var(--darkblue);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--darkblue);
+}
+#surveys .center form .formSide input {
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+    color: var(--darkblue);
+}
+#surveys .center form .formSide select {
+    height: 35px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+    color: var(--lightblue);
+}
+#surveys .center form .formSide textarea {
+    resize: none;
+    height: 100px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+    color: var(--lightblue);
+}
+#surveys .center form .formSend {
+    margin-top: 20px;
+}
+#surveys .center form .formSend input {
+    background-color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    color: white;
+    outline: 1px dashed white;
+    outline-offset: -5px;
+    margin-left: 35.5rem;
+    margin-right: 14px;
+    border-radius: 5px;
+    width: 145px;
+    padding: 10px 0;
+    transition: ease 0.3s;
+}
+#surveys .center form .formSend input:hover {
+    cursor: pointer;
+    border: 2px solid var(--darkblue);
+    color: var(--darkblue);
+    background-color: white;
+    outline: 1px dashed var(--darkblue);
+    outline-offset: -5px;
+    transition: ease 0.3s;
+}
+/*TABLES HTML*/
+#tables {
+    margin-top: 5rem;
+}
+#tables .center #tobaAnnual {
+    width: 100%;
+    table-layout: fixed;
+    text-align: left;
+    border: 3px solid var(--darkblue);
+    background-color: white;
+    border-radius: 10px; 
+    border-spacing: 0;
+}
+#tables .center #tobaAnnual td, th{
+    padding: 10px 15px;
+}
+#tables .center #tobaAnnual th{
+    background-color: var(--darkblue);
+    color: white;
+}
+#tables .center #tobaAnnual #lastTh{
+    border-top-right-radius: 3px;
+}
+#tables .center #tobaAnnual #firstTh{
+    border-top-left-radius: 3px;
+}
+#tables .center #tobaAnnual .secondRow{
+    background-color: var(--sky);
+}
+#bottomTables {
+    display: flex;
+    justify-content: space-between;
+}
+#sectionActivities.center #tobaActivities {
+    width: 39rem;
+    table-layout: fixed;
+    text-align: left;
+    border: 3px solid var(--purple);
+    background-color: white;
+    border-radius: 10px; 
+    border-spacing: 0;
+}
+#sectionActivities.center #tobaActivities td, th{
+    padding: 10px 15px;
+}
+#sectionActivities.center #tobaActivities th{
+    background-color: var(--purple);
+    color: white;
+}
+#sectionActivities.center #tobaActivities #lastTh{
+    border-top-right-radius: 3px;
+}
+#sectionActivities.center #tobaActivities #firstTh{
+    border-top-left-radius: 3px;
+}
+#sectionActivities.center #tobaActivities .mainRow{
+    background-color: rgb(221, 184, 243);
+}
+#sectionActivities.center #tobaActivities #bottomTd{
+    border-bottom-left-radius: 7px;
+}
+#sectionActivities.center #ticketsInfo {
+    width: 39rem;
+    display: flex;
+    justify-content: space-between;
+}
+#sectionActivities.center #ticketsInfo #tobaTickets {
+    width: 100%;
+    table-layout: fixed;
+    text-align: left;
+    border: 3px solid var(--darkblue);
+    background-color: white;
+    border-radius: 10px; 
+    border-spacing: 0;
+}
+#sectionActivities.center #tobaTickets td, th{
+    padding: 10px 15px;
+}
+#sectionActivities.center #tobaTickets th {
+    color: white;
+}
+#sectionActivities.center #tobaTickets #firstDark {
+    background-color: #0c9c92;
+    border-top-left-radius: 7px;
+}
+#sectionActivities.center #tobaTickets #secondDark {
+    background-color: #0c7a9c;
+}
+#sectionActivities.center #tobaTickets #thirdDark {
+    background-color: #0c5b9c;
+}
+#sectionActivities.center #tobaTickets #fourthDark {
+    background-color: #0c3a9c;
+}
+#sectionActivities.center #tobaTickets #fifthDark {
+    background-color: #0c1a9c;
+    border-top-right-radius: 7px;
+}
+#sectionActivities.center #tobaTickets #firstLight {
+    background-color: #a7dbd7;
+    border-bottom-left-radius: 7px;
+}
+#sectionActivities.center #tobaTickets #secondLight {
+    background-color: #a7d2df;
+}
+#sectionActivities.center #tobaTickets #thirdLight {
+    background-color: #a2c9e8;
+}
+#sectionActivities.center #tobaTickets #fourthLight {
+    background-color: #a4bae9;
+}
+#sectionActivities.center #tobaTickets #fifthLight {
+    background-color: #bbbfe4;
+    border-bottom-right-radius: 7px;
+}
+#bottomTables #ticketsInfo {
+    display: flex;
+    flex-direction: column;
+}
+#tables .center h2 {
+    color: var(--darkblue);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--darkblue);
+}
+#titlesBottom {
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+#sectionActivities #titlesBottom h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#sectionActivities #titlesBottom #purpleTitle {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--purple);
+    color: var(--purple);
+}
+#sectionActivities #titlesBottom #aquTitle {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0c9c92;
+    color: #0c9c92;
+}
+/*MERCH HTML*/
+#merchHeader.center {
+    background-image: url(assets/background_store.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%; 
+    height: 20rem; 
+}
+#merchHeader.center h1 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(23, 23, 100, 0.655);
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin: 0 auto;
+}
+#merchGeneral #merchCategories {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#merchGeneral #merchCategories .merchCategory:hover {
+    color: white;
+    box-shadow: inset 20rem 0 0 0 var(--blue);
+    outline: 3px dashed white;
+    outline-offset: -7px;
+}
+#merchGeneral #merchCategories .merchCategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.5rem;
+    height: 4rem;
+    background-color: var(--sky);
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Lilita One", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 40px 0;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: 3px dashed var(--lightblue);
+    outline-offset: -7px;
+    background-color: var(--sky);
+    color: var(--lightblue);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out, outline .3s ease-in-out;
+}
+#merchGeneral #merchCategories .merchCategory img {
+    width: 20%;
+    height: 3.5rem;
+    margin-right: 10px;
+}
+#filtersMerch {
+    display: flex;
+    justify-content: end;
+    margin-top: 4rem;
+}
+#filtersMerch form select {
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+    color: var(--darkblue);
+}
+#merchWhole {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#merchWhole .merchItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 15rem;
+    height: 22rem;
+    background-color: rgb(249, 250, 255);
+    border: var(--lightblue) 3px solid;
+    border-radius: 10px;
+}
+#merchWhole .merchItem img {
+    width: 12rem;
+    border-radius: 10px;
+}
+#merchWhole .merchItem h4 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: var(--lightblue) 3px solid;
+    margin-top: 10px;
+    color: var(--lightblue);
+    font-size: 25px;
+    font-weight: 1000;
+}
+#merchWhole .merchItem p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.merchItemWhole div {
+    text-align: center;
+    margin: 25px 0;
+}
+.merchItemWhole div a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--lightblue);
+    text-decoration: none;
+    color: white;
+    transition: background-color ease 0.3s;
+}
+.merchItemWhole div a:hover {
+    background-color: var(--darkblue);
+    transition: background-color ease 0.3s;
+}
+#pagesSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+#pagesSelector i {
+    color: var(--darkblue);
+}
+#pagesSelector p {
+    display: flex;
+    margin: 0 20px;
+    color: var(--darkblue);
+}
+#pagesSelector a {
+   text-decoration: none;
+   margin: 0 10px;
+   color: var(--darkblue);
+   font-weight: 600;
+}
+#pagesSelector #currentPageMerch {
+    font-weight: 1000;
+    color: var(--darkblue);
+}

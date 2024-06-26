@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Avila Victoria">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43d7a97871.js" crossorigin="anonymous"></script>
+    <title>Surveys - Toba Aquarium</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <a href="index.html"><img src="assets/logo.png" alt="logo_tobaAquarium"></a>
+            <nav>
+                <ul>
+                    <li><a id="currentPage" href="surveys.html"><i class="fa-solid fa-question"></i></a></li>
+                    <li><a href="merch.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="surveys">
+        <section class="center">
+            <form action="surveys.html" method="get">
+                <div class="formSide">
+                    <h2>Tell us about your visit to the Aquarium</h2>
+                    <label for="visitDate">Date of your visit</label>
+                    <input type="date" id="visitDate" name="visitDate">
+                    <label for="numberVisitors">Number of visitors</label>
+                    <input type="number" id="numberVisitors" name="numberVisitors" min="1">
+                    <label for="experienceRating">How would you rate your experience</label>
+                    <select name="experienceRating" id="experienceRating">
+                        <option disabled selected>--Please choose an option--</option>
+                        <option value="Bad">Bad</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Good">Good</option>
+                        <option value="Excelent">Excelent</option>
+                    </select>
+                    <label for="extraOpinionsAqua">Anything you would like to add:</label>
+                    <textarea name="extraOpinionsAqua" id="extraOpinionsAqua"></textarea>
+                </div>
+                <div class="formSide">
+                    <h2>Tell us your opinion about our merchandise</h2>
+                    <label for="merchQuality">How would you rate the quality of the merchandise</label>
+                    <select name="merchQuality" id="merchQuality">
+                        <option disabled selected>--Please choose an option--</option>
+                        <option value="Bad">Bad</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Good">Good</option>
+                        <option value="Excelent">Excelent</option>
+                    </select>
+                    <label for="merchPrice">How would you rate the price of the merchandise</label>
+                    <select name="merchPrice" id="merchPrice">
+                        <option disabled selected>--Please choose an option--</option>
+                        <option value="Cheap">Cheap</option>
+                        <option value="Adequate">Adequate</option>
+                        <option value="Expensive">Expensive</option>
+                    </select>
+                    <label for=""></label>
+                    <label for="animal">Any animal you would like to see more merch from?</label>
+                    <input type="text" id="animal" name="animal">
+                    <label for="extraOpinionsMerch">Anything you would like to add:</label>
+                    <textarea name="extraOpinionsMerch" id="extraOpinionsMerch"></textarea>
+                </div>
+                <div class="formSend">
+                    <input type="submit" value="Submit answers">
+                </div>
+            </form>
+        </section>
+    </main>
+    <aside>
+        <div class="center">
+            <h2>Check out our YouTube Channel!</h2>
+            <div class="videoAd">
+                <iframe src="https://www.youtube.com/embed/creq_1I-llE?si=TIO9xqVP7HiWt5xT" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="videoAd">
+                <iframe src="https://www.youtube.com/embed/WssSkWNxCs8?si=ECqKzkUIr5oQsLZU" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="videoAd">
+                <iframe src="https://www.youtube.com/embed/3h_k6Gt-qT0?si=ef2Xf5UKutrNqDx3" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="center">
+            <div id="sectionFooter">
+                <div class="aquariumMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d411.1035990759043!2d136.84578875420434!3d34.4818672398286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003f5eb36405555%3A0xba83dea359328c8!2sToba%20Aquarium!5e0!3m2!1sen!2sar!4v1719202417184!5m2!1sen!2sar" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="aquariumSocials">
+                    <a class="socialCategory" href="https://aquarium.co.jp/en/">
+                        <i class="fa-solid fa-phone socialMedia"></i>
+                        <span>Contact</span>
+                    </a>
+                    <a class="socialCategory" href="https://www.instagram.com/toba_aquarium.official/?hl=es">
+                        <i class="fa-brands fa-instagram socialMedia"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="socialCategory" href="https://x.com/toba_aquarium?lang=es">
+                        <i class="fa-brands fa-x-twitter socialMedia"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a class="socialCategory" href="https://www.tiktok.com/@toba_aquarium.official?lang=es">
+                        <i class="fa-brands fa-tiktok socialMedia"></i>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p id="copy">Copyright &copy; TOBA AQUARIUM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
